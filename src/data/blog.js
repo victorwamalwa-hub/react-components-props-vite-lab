@@ -1,31 +1,15 @@
 import logo from "../assets/logo";
 
 const blogData = {
-  name: "Underreacted",
+  name: "Wamalwa's Blog",
   image: logo,
-  about: "A blog about learning React",
-  posts: [
-    {
-      id: 1,
-      title: "Components 101",
-      date: "December 15, 2020",
-      preview: "Setting up the building blocks of your site",
-      minutes: 5,
-    },
-    {
-      id: 2,
-      title: "React Data Flow",
-      date: "December 11, 2020",
-      preview: "Passing props is never passé",
-      minutes: 15,
-    },
-    {
-      id: 3,
-      title: "Function vs Class Components",
-      preview: "React, meet OOJS.",
-      minutes: 47,
-    },
+  about: "I'm a software engineering student writing about web development.",
+  articles: [
+    { id: 1, title: "Learning React", date: "Nov 1, 2026", preview: "Components make UI reusable." },
+    { id: 2, title: "Why I love JavaScript", date: "Nov 5, 2026", preview: "It runs everywhere." },
   ],
 };
+
+blogData.posts = blogData.articles;
 
 export default blogData;
